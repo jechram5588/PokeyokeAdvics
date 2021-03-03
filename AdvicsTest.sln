@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvicsTest", "AdvicsTest\AdvicsTest.csproj", "{EF012970-401F-477B-80C1-21A25C19FDE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallProgram", "CallProgram\CallProgram.csproj", "{0F109AB9-B6D7-42C0-AFA6-F1B0EE36A517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokayokeTracking", "PokayokeTracking\PokayokeTracking.csproj", "{EACAF06F-9C4B-4DB9-A19F-B50579D5FBEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Test", "0. Test", "{55E3986B-4E97-4E15-AA56-5D1BD2834BD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Dlls", "1. Dlls", "{7D8FE89B-05C4-4C23-B7AC-09F1BEF1875F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokayokeStations", "PokayokeStations\PokayokeStations.csproj", "{4B5F8AC4-9F14-4FCC-9668-96CC51AA29EE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PokayokeStations_Installer", "PokayokeStations_Installer\PokayokeStations_Installer.vdproj", "{AED9D82A-D902-47ED-A062-8D36AE92277C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF012970-401F-477B-80C1-21A25C19FDE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF012970-401F-477B-80C1-21A25C19FDE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF012970-401F-477B-80C1-21A25C19FDE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF012970-401F-477B-80C1-21A25C19FDE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F109AB9-B6D7-42C0-AFA6-F1B0EE36A517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F109AB9-B6D7-42C0-AFA6-F1B0EE36A517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F109AB9-B6D7-42C0-AFA6-F1B0EE36A517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F109AB9-B6D7-42C0-AFA6-F1B0EE36A517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EACAF06F-9C4B-4DB9-A19F-B50579D5FBEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EACAF06F-9C4B-4DB9-A19F-B50579D5FBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EACAF06F-9C4B-4DB9-A19F-B50579D5FBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EACAF06F-9C4B-4DB9-A19F-B50579D5FBEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B5F8AC4-9F14-4FCC-9668-96CC51AA29EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B5F8AC4-9F14-4FCC-9668-96CC51AA29EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B5F8AC4-9F14-4FCC-9668-96CC51AA29EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B5F8AC4-9F14-4FCC-9668-96CC51AA29EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AED9D82A-D902-47ED-A062-8D36AE92277C}.Debug|Any CPU.ActiveCfg = Debug
+		{AED9D82A-D902-47ED-A062-8D36AE92277C}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0F109AB9-B6D7-42C0-AFA6-F1B0EE36A517} = {55E3986B-4E97-4E15-AA56-5D1BD2834BD7}
+		{EACAF06F-9C4B-4DB9-A19F-B50579D5FBEA} = {7D8FE89B-05C4-4C23-B7AC-09F1BEF1875F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1182011D-808B-44DA-99F9-E0BD806715AC}
+	EndGlobalSection
+EndGlobal
