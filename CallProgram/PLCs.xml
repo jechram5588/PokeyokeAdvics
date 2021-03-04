@@ -2,13 +2,16 @@
 <PLCs>
   <PLC>
     <IP>192.168.0.10</IP>
-    <DM_QR>Direccion</DM_QR>
-    <DM_Result>Resultado</DM_Result>
+    <Station>10</Station>
+    <DM_Trigger>D20010</DM_Trigger>
+    <DM_QR>D20199</DM_QR>
+    <DM_Result>D20600</DM_Result>
   </PLC>
   <PLC>
-    <IP>192.168.0.11</IP>
-    <DM_QR>Direccion</DM_QR>
-    <DM_Result>Resultado</DM_Result>
+    <IP>192.168.0.10</IP>
+    <Station>20</Station>
+    <DM_Trigger>D21010</DM_Trigger>
+    <DM_QR>D21499</DM_QR>
+    <DM_Result>D21600</DM_Result>
   </PLC>
 </PLCs>
-  

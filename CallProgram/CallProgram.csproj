@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CollectPLCData\CollectPLCData.csproj">
+      <Project>{405662f9-298b-4247-b82d-90dc021eb600}</Project>
+      <Name>CollectPLCData</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PokayokeTracking\PokayokeTracking.csproj">
       <Project>{eacaf06f-9c4b-4db9-a19f-b50579d5fbea}</Project>
       <Name>PokayokeTracking</Name>
