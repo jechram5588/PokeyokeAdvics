@@ -61,7 +61,7 @@ namespace PokayokeTracking
                     case 20:
                         this.PrimaryLog("QR", "Lectura de QR", EventLogEntryType.Information, false);
                         QRCode = Pokayoke.LeerBulkPLC((IReadWriteNet)this.keyence_net, "D299", (ushort)11);
-                        if (QRCode != "" && QRCode.Length == 20)
+                        if (QRCode != "" && QRCode.Length == 20 && QRCode.StartsWith("4"))
                         {
                             num = 30;
                             this.Errors = 0;
@@ -71,7 +71,7 @@ namespace PokayokeTracking
                         {
                             QRCode = "";
                             this.Errors = this.Errors + 1;
-                            if (this.Errors > 5)
+                            if (this.Errors > 10)
                             {
                                 this.DesconectaPLC();
                                 this.Errors = 0;
@@ -172,7 +172,7 @@ namespace PokayokeTracking
                 IPAddress address;
                 if (!IPAddress.TryParse("192.168.0.160", out address))
                 {
-                    this.PrimaryLog("Conección a PLC", "IP no valida", EventLogEntryType.Error, true);
+                    this.PrimaryLog("Conexión a PLC", "IP no valida", EventLogEntryType.Error, true);
                     return false;
                 }
                 else
@@ -181,7 +181,7 @@ namespace PokayokeTracking
                     int result;
                     if (!int.TryParse("5000", out result))
                     {
-                        this.PrimaryLog("Conección a PLC", "Puerto Erroneo", EventLogEntryType.Error, true);
+                        this.PrimaryLog("Conexión a PLC", "Puerto Erroneo", EventLogEntryType.Error, true);
                         return false;
                     }
                     else
@@ -199,18 +199,18 @@ namespace PokayokeTracking
             {
                 if (this.keyence_net.ConnectServer().IsSuccess)
                 {
-                    this.PrimaryLog("Conección a PLC", "Conexion OK", EventLogEntryType.Error, true);
+                    this.PrimaryLog("Conexión a PLC", "Conexion OK", EventLogEntryType.Error, true);
                     return true;
                 }
                 else
                 {
-                    this.PrimaryLog("Conección a PLC", "No se logro conectar", EventLogEntryType.Error, true);
+                    this.PrimaryLog("Conexión a PLC", "No se logro conectar", EventLogEntryType.Error, true);
                     return false;
                 }
             }
             catch (Exception ex)
             {
-                this.PrimaryLog("Conección a PLC", ((object)ex.Message).ToString(), EventLogEntryType.Error, true);
+                this.PrimaryLog("Conexión a PLC", ((object)ex.Message).ToString(), EventLogEntryType.Error, true);
                 return false;
             }
         }

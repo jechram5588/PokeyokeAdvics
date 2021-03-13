@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<OPERATIONS>
+  <OP10TightenTorqueMin>1.0</OP10TightenTorqueMin>
+  <OP10TightenTorqueMax>2.1</OP10TightenTorqueMax>
+  <OP20MTMin>3.55</OP20MTMin>
+  <OP20MTMax>0.2</OP20MTMax>
+  <OP20LowPressureValueMin>.5</OP20LowPressureValueMin>
+  <OP20LowPressureValueMax>6.6</OP20LowPressureValueMax>
+  <OP20HighPressureValueMin>7.7</OP20HighPressureValueMin>
+  <OP20HighPressureValueMax>8d</OP20HighPressureValueMax>
+</OPERATIONS>

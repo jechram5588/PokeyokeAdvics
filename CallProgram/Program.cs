@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace CallProgram
 {
@@ -14,11 +15,15 @@ namespace CallProgram
     {
         static void Main(string[] args)
         {
-            ReadPLC readPlc = new ReadPLC();
-            readPlc.Start();
-            while (Console.ReadLine() == "X")
-                Thread.Sleep(1000);
-            readPlc.Running = false;
+            Console.WriteLine(PokayokeParameters.OP10TightenTorqueMin);
+            Console.WriteLine(PokayokeParameters.OP10TightenTorqueMax);
+            Console.WriteLine(PokayokeParameters.OP20MTMin);
+            Console.WriteLine(PokayokeParameters.OP20MTMax);
+            Console.WriteLine(PokayokeParameters.OP20LowPressureValueMin);
+            Console.WriteLine(PokayokeParameters.OP20LowPressureValueMax);
+            Console.WriteLine(PokayokeParameters.OP20HighPressureValueMin);
+            Console.WriteLine(PokayokeParameters.OP20HighPressureValueMax);
+            Console.ReadKey();
         }
     }
 }
