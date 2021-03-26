@@ -15,14 +15,7 @@ namespace CallProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(PokayokeParameters.OP10TightenTorqueMin);
-            Console.WriteLine(PokayokeParameters.OP10TightenTorqueMax);
-            Console.WriteLine(PokayokeParameters.OP20MTMin);
-            Console.WriteLine(PokayokeParameters.OP20MTMax);
-            Console.WriteLine(PokayokeParameters.OP20LowPressureValueMin);
-            Console.WriteLine(PokayokeParameters.OP20LowPressureValueMax);
-            Console.WriteLine(PokayokeParameters.OP20HighPressureValueMin);
-            Console.WriteLine(PokayokeParameters.OP20HighPressureValueMax);
+            PokayokeTracking.CheckSPs.Revisa();
             Console.ReadKey();
         }
     }

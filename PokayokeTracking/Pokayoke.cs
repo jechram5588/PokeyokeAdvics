@@ -313,7 +313,11 @@ namespace PokayokeTracking
                 return;
             try
             {
-                StreamWriter streamWriter = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\LogDeErrores_" + DateTime.Now.ToString("yyyyMMdd") + ".txt", true);
+                string dir = AppDomain.CurrentDomain.BaseDirectory + "Logs";
+                if (!Directory.Exists(dir))
+                    Directory.CreateDirectory(dir);
+
+                StreamWriter streamWriter = new StreamWriter(dir+ "\\Log_" + DateTime.Now.ToString("yyyy_MM_dd") + ".txt", true);
                 streamWriter.WriteLine(string.Format("{0}: {1}-> {2}", (object)DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), (object)origen, (object)evento));
                 ((TextWriter)streamWriter).Flush();
                 streamWriter.Close();
